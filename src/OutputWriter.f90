@@ -71,7 +71,7 @@ contains
       character(len=*), intent(in)                      :: key
       real(KREAL), intent(in)                           :: val
       character(len=32)                                 :: form
-      form = FormatWithIndent(self, '(a,t40,f18.8)')
+      form = FormatWithIndent(self, '(a,t40,f18.10)')
       write(self%fileUnit, form) key, val
    end subroutine
 
